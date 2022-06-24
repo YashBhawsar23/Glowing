@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(23,42,58);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.glow{
+    margin-top: 18%;
+    font-size: 160px;
+    color: wheat;
+    font-family: 'Dancing Script', cursive;
+    transform: rotate(-9deg);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow: 0 0 50px #fff ,0 0 10px #fff, 0 0 20px #e60073,
+        0 0 20px #e60073,0 0 30px #e60073, 0 0 40px #e60073,
+        0 0 50px #e60073;
+    } to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #f880f2, 0 0 40px #f880f2;
+        
+    }
+
+}
